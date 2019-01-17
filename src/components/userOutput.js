@@ -1,9 +1,10 @@
 import  React  from 'react';
+import '../styles/UserOutput.css';
 
 const UserOutput = (props) => {
 
         return (
-            <div>
+            <div className='UserOutput' >
                 <p> This is a assignment for : {props.username} </p>
                 <p>Even when this parragraph is'nt changing</p>
             </div>

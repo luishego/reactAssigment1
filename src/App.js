@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import './Styles/userInput.css'
+
 import UserInput from './components/userInput';
 import UserOutput from './components/userOutput';
+
+//import 'src/styles/UserInput.css'
 
 
 class App extends Component {
@@ -15,8 +17,8 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <UserInput changed={this.usernameChangedHandler} currentName={this.state.username} />
+      <div >
+        <UserInput  changed={this.usernameChangedHandler} currentName={this.state.username} />
         <UserOutput username= { this.state.username } />
       </div>
     );
